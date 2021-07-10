@@ -63,7 +63,7 @@ h6 {
     }
 
 nav {
-    flex: 2;
+    flex: 1;
 }
 
     .nav-links {
@@ -79,7 +79,7 @@ nav {
         }
 
 .cart {
-    flex: 2;
+    flex: 1;
 }
 
     .nav-icons {
@@ -94,3 +94,15 @@ nav {
             text-decoration: none;
             padding: 1em;
         }
+
+.burger {
+    display: none;
+}
+
+    .burger div {
+        width: 22px;
+        height: 3px;
+        background-color: #af762f;
+        margin: 5px;
+    }
+
