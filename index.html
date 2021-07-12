@@ -1,149 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9ffc33f8ec.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Bakery</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#">Novedades</a></li>
-                <li><a class="nav-link" href="#">Productos</a></li>
-                <li><a class="nav-link" href="#">Catering</a></li>
-            </ul>
-        </nav>
-        <div class="logo-container">
-            <img class="logo-img" src="/assets/img/picLogo.png" alt="logo">
-            <a class="logo-text" href="/index.html"><h6>La Costanera</h6></a>
-        </div>
-        <div class="cart">
-            <ul class="nav-icons">
-                <li><a class="nav-icon" href="#"><i class="fas fa-cart-arrow-down fa-lg"></i></a></li>
-                <li><a class="nav-icon" href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
-                <li><a class="nav-icon" href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-            </ul>
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </header>
-    <section>
-        <div class="carousel-container">
-            <i class="fas fa-arrow-left" id="prevBtn"></i>
-            <i class="fas fa-arrow-right" id="nextBtn"></i>
-            <div class="carousel-slide">
-                <img src="/assets/img/bg3.jpg" class="carousel-img" id="lastClone" alt="">
-                <img src="/assets/img/bg1.jpg" class="carousel-img" alt="">
-                <img src="/assets/img/bg2.jpg" class="carousel-img" alt="">
-                <img src="/assets/img/bg3.jpg" class="carousel-img" alt="">
-                <img src="/assets/img/bg1.jpg" class="carousel-img" id="firstClone" alt="">
-            </div>
-        </div>
-    </section>
-    <main>
-        <section>
-            <figure class="text-center">
-                <blockquote class="blockquote">
-                    <p>A well-known quote, contained in a blockquote element.</p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </figcaption>
-            </figure>
-        </section>
-        <section class="tiles">
-            <article>
-                <span class="image"><img src="/assets/img/pic01.jpg" alt=""></span>
-                <a href="">
-                    <h2>Novedades</h2>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <span class="image"><img src="/assets/img/pic02.jpg" alt=""></span>
-                <a href="">
-                    <h2>Panificados</h2>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <span class="image"><img src="/assets/img/pic03.jpg" alt=""></span>
-                <a href="">
-                    <h2>Masas Dulces</h2>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </a>
-            </article>
-        </section>
-    </main>
-    <!-- <footer>
-        <div class="footer-content">
-            <h3>La Costanera</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore omnis minus nostrum quas suscipit beatae aut nemo impedit? Natus, esse suscipit atque nostrum doloremque voluptate ut incidunt est earum fugiat.</p>
-            <ul class="socials">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy;2021 laCostanera. designed by <span>zunny-k</span></p>
-        </div>
-    </footer> -->
-    <footer class="footer-content text-start">
-        <div class="footer-left">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/9ffc33f8ec.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <title>Bakery</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#">Novedades</a></li>
+                    <li><a class="nav-link" href="#">Productos</a></li>
+                    <li><a class="nav-link" href="#">Catering</a></li>
+                </ul>
+            </nav>
             <div class="logo-container">
-                <img src="/assets/img/picLogo.png" alt="logo" class="logo-img">
-                <a class="logo-text" href="/index.html"><h6>La Costanera</h6></a>
+                <img
+                    class="logo-img"
+                    src="/assets/img/picLogo.png"
+                    alt="logo"
+                />
+                <a class="logo-text" href="/index.html"
+                    ><h6>La Costanera</h6></a
+                >
             </div>
-            <p class="footer-links">
-                <a href="#" class="text-decoration-none">Inicio</a>
-                <a href="#" class="text-decoration-none">Novedades</a>
-                <a href="#" class="text-decoration-none">Productos</a>
-                <a href="#" class="text-decoration-none">Contacto</a>
-            </p>
-            <p>copyright &copy;2021 laCostanera. designed by <span>zunny-k</span></p>
-        </div>
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>17 - Gral. Belgrano, esquina Independencia - </span>Reconquista, Santa Fe - 3560</p>
+            <div class="cart">
+                <ul class="nav-icons">
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fas fa-cart-arrow-down fa-lg"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fab fa-instagram fa-lg"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fab fa-facebook-f fa-lg"></i
+                        ></a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+54 3482 651321</p>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:lacostanera@gmail.com" class="text-decoration-none">lacostanera@gmail.com</a></p>
+        </header>
+        <section>
+            <div class="carousel-container">
+                <i class="fas fa-arrow-left" id="prevBtn"></i>
+                <i class="fas fa-arrow-right" id="nextBtn"></i>
+                <div class="carousel-slide">
+                    <img
+                        src="/assets/img/bg3.jpg"
+                        class="carousel-img"
+                        id="lastClone"
+                        alt=""
+                    />
+                    <img
+                        src="/assets/img/bg1.jpg"
+                        class="carousel-img"
+                        alt=""
+                    />
+                    <img
+                        src="/assets/img/bg2.jpg"
+                        class="carousel-img"
+                        alt=""
+                    />
+                    <img
+                        src="/assets/img/bg3.jpg"
+                        class="carousel-img"
+                        alt=""
+                    />
+                    <img
+                        src="/assets/img/bg1.jpg"
+                        class="carousel-img"
+                        id="firstClone"
+                        alt=""
+                    />
+                </div>
             </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-about">
-                <span>Nuestra panadería</span>
-                Buscamos llevar el sabor de la panadería artesanal a sus casas y locales usando conservantes naturales para llevar una vida más sana.
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+        </section>
+        <main>
+            <section>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>
+                            A well-known quote, contained in a blockquote
+                            element.
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="tiles">
+                <article>
+                    <span class="image"
+                        ><img src="/assets/img/pic01.jpg" alt=""
+                    /></span>
+                    <a href="">
+                        <h2>Novedades</h2>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <span class="image"
+                        ><img src="/assets/img/pic02.jpg" alt=""
+                    /></span>
+                    <a href="">
+                        <h2>Panificados</h2>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <span class="image"
+                        ><img src="/assets/img/pic03.jpg" alt=""
+                    /></span>
+                    <a href="">
+                        <h2>Masas Dulces</h2>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer class="footer-content text-start">
+            <div class="footer-left">
+                <div class="logo-container">
+                    <img
+                        src="/assets/img/picLogo.png"
+                        alt="logo"
+                        class="logo-img"
+                    />
+                    <a class="logo-text" href="/index.html"
+                        ><h6>La Costanera</h6></a
+                    >
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="text-decoration-none">Inicio</a>
+                    <a href="#" class="text-decoration-none">Novedades</a>
+                    <a href="#" class="text-decoration-none">Productos</a>
+                    <a href="#" class="text-decoration-none">Contacto</a>
+                </div>
+                <p class="copyright">
+                    copyright &copy;2021 laCostanera. designed by
+                    <span>zunny-k</span>
+                </p>
             </div>
-        </div>
-    </footer>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>
+                        <span
+                            >17 - Gral. Belgrano, esquina Independencia - </span
+                        >Reconquista, Santa Fe - 3560
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+54 3482 651321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                        <a
+                            href="mailto:lacostanera@gmail.com"
+                            class="text-decoration-none"
+                            >lacostanera@gmail.com</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>Nuestra panadería</span>
+                    Buscamos llevar el sabor de la panadería artesanal a sus
+                    casas y locales usando conservantes naturales para llevar
+                    una vida más sana.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
 
-    <script src="/assets/js/app.js"></script>
-</body>
+        <script src="/assets/js/app.js"></script>
+    </body>
 </html>
