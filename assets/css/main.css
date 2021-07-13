@@ -367,13 +367,67 @@ body:not(.is-touch) .tiles article:hover .content {
     }
 }
 
+/* Cards */
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    margin: 1.25rem;
+}
+
+.card-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5cf8e;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.card-icon {
+    flex: 1;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.card-icon i {
+    color: #926125;
+}
+
+.card-content {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    color: #926125;
+}
+
+@media screen and (max-width: 480px) {
+    .card-text {
+        align-items: center;
+        text-align: center;
+    }
+    .card-icon {
+        justify-content: center;
+        margin: 1rem 1rem 0 1rem;
+    }
+}
+
 /* Footer */
 footer {
     position: absolute;
     display: flex;
 }
 
-@media screen (max-height: 800px) {
+@media screen and (max-height: 800px) {
     footer {
         position: static;
     }
