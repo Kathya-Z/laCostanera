@@ -369,55 +369,111 @@ body:not(.is-touch) .tiles article:hover .content {
 
 /* Cards */
 .cards {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    margin: 1.25rem;
-}
-
-.card-row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    background-color: #f5cf8e;
-    background-clip: border-box;
+    position: relative;
+    margin: -2.5em 0 0 -2.5em;
+}
+
+.cards article {
+    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -0.5);
-    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    border-radius: 4px;
+    width: calc(50% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+    display: flex;
 }
 
-.card-icon {
-    flex: 1;
-    padding: 1rem 0 1rem 1rem;
+.cards article > .card-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 1.25rem 0 2.5rem;
 }
 
-.card-icon i {
-    color: #926125;
+.cards article > .card-icon :last-child {
+    margin: 0;
 }
 
-.card-content {
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
+.cards article > .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    border-bottom: 0;
+    color: #333;
+    text-align: left;
 }
 
-.card-text:last-child {
-    margin-bottom: 0;
-    color: #926125;
+.card-text p {
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+}
+
+* + .cards {
+    margin: 2em;
+}
+
+@media screen and (max-width: 980px) {
+    .cards {
+        margin: -2.5em 0 0 -2.5em;
+    }
+
+    .cards article {
+        width: calc(50% - 2.5rem);
+        margin: 2.5em 0 0 2.5em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .cards {
+        margin: -1.25em 0 0 -1.25em;
+    }
+
+    .cards article {
+        width: calc(50% - 1.25rem);
+        margin: 1.25em 0 0 1.25em;
+        display: block;
+    }
+
+    .cards article > .card-icon {
+        margin: 1.25rem 0 0 0;
+    }
+
+    .cards article > .card-content {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .card-text {
-        align-items: center;
-        text-align: center;
+    .cards {
+        margin: 0;
     }
-    .card-icon {
+
+    .cards article {
+        width: 100%;
+        margin: 1.25em 0 0 0;
+        display: block;
+    }
+
+    .cards article > .card-icon {
+        margin: 1.25rem 0 0 0;
+    }
+
+    .cards article > .card-content {
         justify-content: center;
-        margin: 1rem 1rem 0 1rem;
+        text-align: center;
     }
 }
 
