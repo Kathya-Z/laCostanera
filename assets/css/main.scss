@@ -1,4 +1,6 @@
 @import "./styleBag";
+@import "./productos";
+@import "./checkoutForm";
 
 * {
     margin: 0;
@@ -19,7 +21,7 @@ header {
 }
 
 h6 {
-    color: #af762f;
+    color: $cookie;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 14px;
@@ -147,7 +149,7 @@ nav {
 }
 
 .nav-link {
-    color: #af762f;
+    color: $cookie;
     font-size: 14px;
     text-decoration: none;
 }
@@ -163,7 +165,7 @@ nav {
 }
 
 .nav-icon {
-    color: #af762f;
+    color: $cookie;
     font-size: 14px;
     text-decoration: none;
     padding: 1em;
@@ -176,7 +178,7 @@ nav {
 .burger div {
     width: 22px;
     height: 3px;
-    background-color: #af762f;
+    background-color: $cookie;
     margin: 5px;
 }
 
@@ -519,7 +521,7 @@ footer {
 
 .footer-content .footer-links {
     flex: 2;
-    color: #af762f;
+    color: $cookie;
     margin: 0;
 }
 
@@ -536,18 +538,18 @@ footer {
 .footer-content .copyright {
     flex: 1;
     font-size: small;
-    color: #af762f;
+    color: $cookie;
     margin: 0;
 }
 
 .footer-content .footer-left .copyright span {
-    color: #f5cf8e;
+    color: $orange;
 }
 
 /* Footer Center */
 
 .footer-content .footer-center i {
-    color: #af762f;
+    color: $cookie;
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -564,7 +566,7 @@ footer {
 
 .footer-content .footer-center p {
     display: inline-block;
-    color: #af762f;
+    color: $cookie;
     vertical-align: middle;
     margin: 0;
 }
@@ -577,14 +579,14 @@ footer {
 }
 
 .footer-content .footer-center p a {
-    color: #af762f;
+    color: $cookie;
 }
 
 /* Footer right */
 
 .footer-content .footer-about {
     line-height: 20px;
-    color: #af762f;
+    color: $cookie;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
@@ -592,7 +594,7 @@ footer {
 
 .footer-content .footer-about span {
     display: block;
-    color: #af762f;
+    color: $cookie;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -607,7 +609,7 @@ footer {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #af762f;
+    background-color: $cookie;
     border-radius: 2px;
     font-size: 20px;
     color: #f9f7f8;

@@ -30,9 +30,9 @@ input[type="text"] {
     font-family: $font-txt;
 }
 
-body {
+/* body {
     background: linear-gradient(#e6e6e6, #bbbbbb);
-}
+} */
 
 .center-wrapper {
     padding: 0.5rem;
@@ -49,14 +49,14 @@ body {
     min-height: 100%;
 }
 
-.content {
+.contetn-bag {
     margin: 0 auto;
     max-width: 600px;
     border: 1px solid $yellow;
     background: white;
 }
 
-nav,
+#nav-bag,
 .top-bar,
 .bag,
 .bag-total,
@@ -64,13 +64,12 @@ nav,
     padding: 0.5rem 1rem;
 }
 
-nav,
-a,
-.btn-go-checkout {
+#nav-bag,
+.menu .btn-go-checkout {
     color: white;
 }
 
-nav {
+#nav-bag {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,7 +86,7 @@ nav {
     background: $cookie;
 }
 
-a {
+.menu {
     padding: 0.2rem 0.5rem;
     border: 2px solid white;
     text-decoration: none;
@@ -259,5 +258,5 @@ input[type="text"] {
     left: 30px;
     border-radius: 10px;
     box-shadow: $shadow;
-    /*  background-color: white; */
+    background-color: white;
 }
