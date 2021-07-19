@@ -16,6 +16,55 @@
         <title>Bakery</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="masasDulces.html">Catering</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <img
+                    class="logo-img"
+                    src="/assets/img/picLogo.png"
+                    alt="logo"
+                />
+                <a class="logo-text" href="/index.html"
+                    ><h6>La Costanera</h6></a
+                >
+            </div>
+            <div class="cart">
+                <ul class="nav-icons">
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fas fa-cart-arrow-down fa-lg"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fab fa-instagram fa-lg"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#"
+                            ><i class="fab fa-facebook-f fa-lg"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </header>
         <main id="main-bag">
             <div class="center-wrapper">
                 <div class="content-bag">
@@ -91,32 +140,25 @@
                             <p class="small">
                                 Delivery (Standard - 2 working days):<br />
                                 <span class="change-delivery"
-                                    >Sin delivery</span
+                                    >Incluye delivery</span
                                 >
                             </p>
                             <p class="small">$40</p>
+                        </div>
+                        <div class="promo-checkbox">
+                            <input type="checkbox" name="promo-check" checked />
+                            <label for="promo-check">Incluir Delivery</label>
                         </div>
                         <div class="total">
                             <h3>Total:</h3>
                             <h3>$65.00</h3>
                         </div>
-                        <div class="promo-checkbox">
-                            <input type="checkbox" name="promo-check" checked />
-                            <label for="promo-check">I have a promo code</label>
-                        </div>
-                        <div class="promo-code">
-                            <input
-                                type="text"
-                                name="promo-checkbox"
-                                placeholder="Enter your promo code here"
-                                checked
-                            />
-                            <button class="apply">Apply</button>
-                        </div>
-                        <button class="btn-go-checkout">
-                            <i class="fas fa-lock"></i>
-                            <span>Go to Checkout</span>
-                        </button>
+
+                        <input
+                            type="submit"
+                            value="Continue to checkout"
+                            class="btn"
+                        />
                     </div>
                     <div class="help">
                         <p>Necesita ayuda? Contactenos al 01234 567 890</p>

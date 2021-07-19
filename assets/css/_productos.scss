@@ -1,0 +1,17 @@
+.tiles article > a .btn-prod {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+}
+
+.tiles article > a .btn-prod > :last-child {
+    margin-bottom: 0;
+}
+
+body:not(.is-touch) .tiles article:hover .btn-prod {
+    max-height: 15em;
+    opacity: 1;
+}
