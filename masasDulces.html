@@ -16,61 +16,56 @@
         <title>Bakery</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#">Novedades</a></li>
-                    <li><a class="nav-link" href="#">Productos</a></li>
-                    <li><a class="nav-link" href="#">Catering</a></li>
-                </ul>
-            </nav>
-            <div class="logo-container">
-                <img
-                    class="logo-img"
-                    src="/assets/img/picLogo.png"
-                    alt="logo"
-                />
-                <a class="logo-text" href="/index.html"
-                    ><h6>La Costanera</h6></a
-                >
-            </div>
-            <div class="cart">
-                <ul class="nav-icons">
-                    <li>
-                        <a class="nav-icon" href="#"
-                            ><i class="fas fa-cart-arrow-down fa-lg"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a class="nav-icon" href="#"
-                            ><i class="fab fa-instagram fa-lg"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a class="nav-icon" href="#"
-                            ><i class="fab fa-facebook-f fa-lg"></i
-                        ></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        <header class="container-head">
+            <div class="navbar">
+                <div class="logo-container">
+                    <a href="/index.html"
+                        ><img
+                            src="/assets/img/picLogo.png"
+                            alt="logo"
+                            width="60px"
+                    /></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li>
+                            <a class="nav-link" href="novedades.html"
+                                >Novedades</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link" href="productos.html"
+                                >Productos</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link" href="masasDulces.html"
+                                >Catering</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <a class="nav-icon" href="checkOut.html"
+                    ><i class="fas fa-cart-arrow-down fa-lg"></i
+                ></a>
+                <div class="burger" onclick="menutoggle()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
         </header>
         <main></main>
         <footer class="footer-content text-start">
             <div class="footer-left">
                 <div class="logo-container">
-                    <img
+                    <a class="logo-text" href="/index.html">
+                        <img
                         src="/assets/img/picLogo.png"
                         alt="logo"
                         class="logo-img"
+                        width="120px"
                     />
-                    <a class="logo-text" href="/index.html"
-                        ><h6>La Costanera</h6></a
-                    >
                 </div>
                 <div class="footer-links">
                     <a href="#" class="text-decoration-none">Inicio</a>

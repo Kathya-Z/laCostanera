@@ -1,0 +1,73 @@
+/* -------- NAVBAR -------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+nav {
+    flex: 1;
+    text-align: left;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a {
+    color: $cookie;
+    text-decoration: none;
+}
+.container-head {
+    max-width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: $orange;
+}
+.logo-container {
+    align-items: center;
+}
+.nav-icon {
+    color: $cookie;
+}
+.burger {
+    margin-left: 20px;
+    display: none;
+}
+.burger div {
+    background-color: $cookie;
+    width: 22px;
+    height: 3px;
+    margin: 5px;
+}
+/* -------- media query for menu -------- */
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: $cookie;
+        width: 120px;
+        overflow: hidden;
+        transition: max-height 02s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 14px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}

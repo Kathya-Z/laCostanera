@@ -1,3 +1,5 @@
+@import "./variables";
+@import "./header";
 @import "./styleBag";
 @import "./productos";
 @import "./checkoutForm";
@@ -12,13 +14,13 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-header {
+/* header {
     display: flex;
     margin: auto;
     align-items: center;
     min-height: 8vh;
     background-color: #f9f7f8;
-}
+} */
 
 h6 {
     color: $cookie;
@@ -118,7 +120,7 @@ h6 {
     word-break: break-word;
 }
 
-.logo-container,
+/* .logo-container,
 .nav-links,
 .nav-icons {
     display: flex;
@@ -192,7 +194,7 @@ nav {
     .cart {
         display: none;
     }
-}
+} */
 
 .carousel-container {
     width: auto;

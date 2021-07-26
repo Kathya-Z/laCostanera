@@ -1,5 +1,96 @@
 @charset "UTF-8";
+/* -------- NAVBAR -------- */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Space+Mono:700");
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+
+nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #a35d3c;
+  text-decoration: none;
+}
+
+.container-head {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #d8a86c;
+}
+
+.logo-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-icon {
+  color: #a35d3c;
+}
+
+.burger {
+  margin-left: 20px;
+  display: none;
+}
+
+.burger div {
+  background-color: #a35d3c;
+  width: 22px;
+  height: 3px;
+  margin: 5px;
+}
+
+/* -------- media query for menu -------- */
+@media only screen and (max-width: 480px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #a35d3c;
+    width: 120px;
+    overflow: hidden;
+    -webkit-transition: max-height 02s;
+    transition: max-height 02s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 14px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -403,18 +494,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 8vh;
-  background-color: #f9f7f8;
-}
-
+/* header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #f9f7f8;
+} */
 h6 {
   color: #a35d3c;
   text-transform: uppercase;
@@ -520,95 +606,81 @@ h6 {
   word-break: break-word;
 }
 
-.logo-container,
+/* .logo-container,
 .nav-links,
 .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: flex;
 }
 
 .logo-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+    align-items: center;
+    flex: 1;
 }
 
 .logo-text {
-  text-decoration: none;
-  padding-left: 5px;
+    text-decoration: none;
+    padding-left: 5px;
 }
 
 .logo-img {
-  height: 8vh;
+    height: 8vh;
 }
 
 nav {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+    flex: 1;
 }
 
 .nav-links {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style: none;
-  width: 60%;
+    justify-content: space-around;
+    list-style: none;
+    width: 60%;
 }
 
 .nav-link {
-  color: #a35d3c;
-  font-size: 14px;
-  text-decoration: none;
+    color: $cookie;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .cart {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+    flex: 1;
 }
 
 .nav-icons {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style: none;
-  margin-right: 1em;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 1em;
 }
 
 .nav-icon {
-  color: #a35d3c;
-  font-size: 14px;
-  text-decoration: none;
-  padding: 1em;
+    color: $cookie;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 1em;
 }
 
 .burger {
-  display: none;
+    display: none;
 }
 
 .burger div {
-  width: 22px;
-  height: 3px;
-  background-color: #a35d3c;
-  margin: 5px;
+    width: 22px;
+    height: 3px;
+    background-color: $cookie;
+    margin: 5px;
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 80%;
-  }
+    .nav-links {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .cart {
-    display: none;
-  }
-}
-
+    .cart {
+        display: none;
+    }
+} */
 .carousel-container {
   width: auto;
   height: 70vh;
